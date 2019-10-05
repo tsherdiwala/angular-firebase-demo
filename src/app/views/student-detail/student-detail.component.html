@@ -1,0 +1,23 @@
+<h1>
+    Student Detail
+</h1>
+<div>
+    <form [formGroup]="studentForm" (ngSubmit)="addStudent()">
+        <input formControlName="id" type="hidden" />
+        <div>
+            <input formControlName="name" type="text" placeholder="Name" />
+        </div>
+        <div>
+            <input formControlName="class" type="text" placeholder="Class" />
+        </div>
+        <div>
+            <input [disabled]="studentForm.invalid" type="submit" />
+        </div>
+    </form>
+    <div>
+        {{ studentForm.value | json }}
+    </div>
+    <div>
+        {{ studentForm.valid | json }}
+    </div>
+</div>

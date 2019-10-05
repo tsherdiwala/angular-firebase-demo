@@ -1,0 +1,16 @@
+<div>
+    <h1 class="left">
+        Student list
+    </h1>
+    <button class="right" (click)="addStudent()">
+        Add
+    </button>
+    <div class="clearfix"></div>
+</div>
+<ul>
+    <li *ngFor="let student of students">
+        <div>Name: {{student.name}}</div>
+        <div>Class: {{student.class}}</div>
+        <div><a routerLink="/edit/{{student.id}}">Edit</a></div>
+    </li>
+</ul>

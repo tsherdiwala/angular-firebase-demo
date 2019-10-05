@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDsuKbXgGBKTSCSsvwkQ4CHz_KzJ_K8CEs",
+    authDomain: "go-drive-demo.firebaseapp.com",
+    databaseURL: "https://go-drive-demo.firebaseio.com",
+    projectId: "go-drive-demo",
+    storageBucket: "go-drive-demo.appspot.com",
+    messagingSenderId: "508840791847",
+    appId: "1:508840791847:web:dfd28b69ca665d8cb42302"
+  }
 };
 
 /*
